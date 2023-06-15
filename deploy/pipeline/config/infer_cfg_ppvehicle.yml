@@ -11,7 +11,7 @@ MOT:
   tracker_config: deploy/pipeline/config/tracker_config.yml
   batch_size: 1
   skip_frame_num: -1 # preferably no more than 3
-  enable: False
+  enable: True
 
 VEHICLE_PLATE:
   det_model_dir: https://bj.bcebos.com/v1/paddledet/models/pipeline/ch_PP-OCRv3_det_infer.tar.gz
@@ -21,7 +21,7 @@ VEHICLE_PLATE:
   rec_image_shape: [3, 48, 320]
   rec_batch_num: 6
   word_dict_path: deploy/pipeline/ppvehicle/rec_word_dict.txt
-  enable: False
+  enable: True
 
 VEHICLE_ATTR:
   model_dir: https://bj.bcebos.com/v1/paddledet/models/pipeline/vehicle_attribute_model.zip
